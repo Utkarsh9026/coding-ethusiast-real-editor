@@ -19,9 +19,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:front": "react-scripts start",
+    "start:front": "react-scripts --openssl-legacy-provider start",
     "start": "yarn build && yarn server:prod",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js",
     "test": "react-scripts test",
